@@ -2,7 +2,6 @@ export default {
   api: {
     operationFailed: 'Operation failed',
     errorTip: 'Error Tip',
-    successTip: 'Success Tip',
     errorMessage: 'The operation failed, the system is abnormal!',
     timeoutMessage: 'Login timed out, please log in again!',
     apiTimeoutMessage: 'The interface request timed out, please refresh the page and try again!',
@@ -57,17 +56,9 @@ export default {
     networkErrorSubTitle:
       'Sorry，Your network connection has been disconnected, please check your network!',
   },
-  lock: {
-    unlock: 'Click to unlock',
-    alert: 'Lock screen password error',
-    backToLogin: 'Back to login',
-    entry: 'Enter the system',
-    placeholder: 'Please enter the lock screen password or user password',
-  },
   login: {
     backSignIn: 'Back sign in',
     mobileSignInFormTitle: 'Mobile sign in',
-    qrSignInFormTitle: 'Qr code sign in',
     signInFormTitle: 'Sign in',
     signUpFormTitle: 'Sign up',
     forgetFormTitle: 'Reset password',
@@ -102,4 +93,4 @@ export default {
     smsCode: 'SMS code',
     mobile: 'Mobile',
   },
-};
+}

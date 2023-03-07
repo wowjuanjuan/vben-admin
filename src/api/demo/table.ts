@@ -1,8 +1,10 @@
-import { defHttp } from '/@/utils/http/axios';
-import { DemoParams, DemoListGetResultModel } from './model/tableModel';
+import { defHttp } from '/@/utils/http/axios'
+import { DemoParams, DemoListGetResultModel } from './model/tableModel'
 
 enum Api {
   DEMO_LIST = '/table/getDemoList',
+  //测试
+  TEST='/test'
 }
 
 /**
@@ -12,9 +14,10 @@ enum Api {
 export const demoListApi = (params: DemoParams) =>
   defHttp.get<DemoListGetResultModel>({
     url: Api.DEMO_LIST,
+    // url:Api.TEST,
     params,
     headers: {
       // @ts-ignore
       ignoreCancelToken: true,
     },
-  });
+  })
